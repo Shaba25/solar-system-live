@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solar System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="renderer-container"></div>
+
+  <button id="moonToggle">&#127769; Show Moons</button>
+  <button id="resetCamera">&#10263; Reset</button>
+
+  <div id="tooltip"></div>
+
+  <div id="dateDisplay"></div>
+
+  <div id="pausedBanner">&#9208; PAUSED &mdash; Planets frozen for observation</div>
+
+  <div id="bottomControls">
+    <button id="pauseBtn">&#9208; Pause</button>
+    <span class="pause-hint">or press Space</span>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/renderers/CSS2DRenderer.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
